@@ -1,0 +1,11 @@
+#include<stdio.h>  
+int main(){  
+    long long n,i,ans=1;  
+    while(scanf("%lld",&n)!=EOF){  
+        ans=1;  
+        for(i=1;i<=n;i++){  
+            ans=ans*i;  
+        }  
+            printf("%lld\n",ans);  
+    }  
+}  
