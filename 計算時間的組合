@@ -1,0 +1,13 @@
+int main(){   
+    int days,hours,minutes,seconds,a,b;   
+    scanf("%d",&a);   
+    b=a/60;   
+    seconds=a-60*b;   
+    a=b/60;   
+    minutes=b-60*a;   
+    b=a/24;   
+    hours=a-24*b;   
+    days=b;   
+    printf("%d days\n%d hours\n%d minutes\n%d seconds\n",days,hours,minutes,seconds);   
+    return 0;   
+}  
