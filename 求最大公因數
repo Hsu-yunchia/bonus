@@ -1,0 +1,13 @@
+#include<stdio.h>  
+int main(){  
+    int x,y,i,ans;  
+    while(scanf("%d %d",&x,&y)!=EOF){  
+        for(i=1;i<x;i++){  
+            if(x%i==0&&y%i==0){  
+                ans=i;  
+            }  
+        }  
+        printf("%d\n",ans);  
+    }  
+    return 0;  
+} 
