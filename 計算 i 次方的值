@@ -1,0 +1,17 @@
+#include <stdio.h>        
+int main(){        
+    int i,n,ans;      
+    while(scanf("%d",&i)!=EOF){  
+        if(i>30){  
+            printf("Value of more than 31\n");  
+        }  
+        else{  
+            ans=1;  
+            for(n=0;n<i;n++){  
+                ans=ans*2;  
+            }  
+            printf("%d\n",ans);  
+        }  
+    }       
+    return 0;        
+}  
