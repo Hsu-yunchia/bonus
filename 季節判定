@@ -1,0 +1,17 @@
+#include<stdio.h>    
+int main(){    
+    int m;    
+    while(scanf("%d",&m)!=EOF){  
+        if(m<=5&&m>=3){  
+            printf("Spring\n");  
+        }  
+        else if(m<=8&&m>=6){  
+            printf("Summer\n");  
+        }  
+        else if(m<=11&&m>=9){  
+            printf("Autumn\n");  
+        }  
+        else printf("Winter\n");  
+    }  
+    return 0;  
+}  
