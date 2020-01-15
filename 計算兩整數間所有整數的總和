@@ -1,0 +1,17 @@
+#include<stdio.h>  
+int main(){  
+    int a,b,i,temp,ans=0;  
+    while(scanf("%d %d",&a,&b)!=EOF){  
+        ans=0;  
+        if(a>b){  
+            temp=a;  
+            a=b;  
+            b=temp;  
+        }  
+        for(i=a;i<=b;i++){  
+            ans=ans+i;  
+        }  
+        printf("%d\n",ans);  
+    }  
+    return 0;  
+}  
