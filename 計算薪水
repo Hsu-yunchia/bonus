@@ -1,0 +1,15 @@
+#include<stdio.h>  
+int main(){  
+    double h,m;  
+    while(scanf("%lf %lf",&h,&m)!=EOF){  
+        if(h<=60){  
+            printf("%.1f\n",h*m);  
+        }  
+        if(h>60&&h<=120){  
+            printf("%.1f\n",(h-60)*1.33*m+60*m);  
+        }  
+        if(h>120){  
+            printf("%.1f\n",(h-120)*1.66*m+60*1.33*m+60*m);  
+        }  
+    }  
+}  
