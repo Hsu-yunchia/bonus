@@ -1,0 +1,15 @@
+#include<stdio.h>    
+int main(){    
+    int i,j,a,b,c;    
+    while(scanf("%d",&i)!=EOF){    
+        c=i%10;  
+        j=(i-c)/10;  
+        b=j%10;  
+        a=(j-b)/10;  
+        if(i==a*a*a+b*b*b+c*c*c){  
+            printf("Yes\n");  
+        }  
+        else printf("No\n");  
+    }  
+    return 0;  
+}  
